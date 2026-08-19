@@ -1,97 +1,84 @@
 # 🔐 Gerador de Senhas
 
-Um gerador de senhas aleatórias desenvolvido em **Python**, feito como um projeto simples para praticar lógica de programação e manipulação de caracteres.
+Gerador de senhas aleatórias desenvolvido em **Python**.
+
+O projeto gera senhas de 16 caracteres usando letras, números e caracteres especiais e permite copiar a senha para a área de transferência.
+
+> 🟡 **Status:** Beta
 
 ## ✨ Funcionalidades
 
-* 🔑 Geração automática de senhas
-* 🔢 Senhas com 16 caracteres
-* 🔤 Letras maiúsculas e minúsculas
-* 🔢 Números
-* 🔣 Caracteres especiais
-* 📋 Copia da senha para a área de transferência
-* 🔄 Geração de novas senhas sem reiniciar o programa
-* ⌨️ Controle por teclado usando `ENTER` e `ESC`
+- 🔑 Geração automática de senhas de 16 caracteres
+- 🔤 Letras maiúsculas e minúsculas
+- 🔢 Números
+- 🔣 Caracteres especiais
+- 📋 Cópia para a área de transferência
+- 🔄 Geração de novas senhas sem reiniciar o programa
+- ⌨️ Controle por teclado
 
-## 📦 Instalação
+## 🛠️ Tecnologias
 
-Clone o repositório:
+- Python 3
+- `pyperclip` — cópia para a área de transferência
+- `msvcrt` — leitura do teclado no Windows
+- `random` e `string` — bibliotecas padrão do Python
+
+> ⚠️ O programa utiliza `msvcrt`, portanto foi desenvolvido principalmente para **Windows**.
+
+## ▶️ Como executar
+
+### 1. Tenha o Python instalado
+
+Instale o **Python 3** na sua máquina.
+
+### 2. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/gerador-de-senhas.git
+git clone https://github.com/ricardodecarvalholorenzib/Gerador-de-Senhas.git
+cd Gerador-de-Senhas
 ```
 
-Entre na pasta:
+### 3. Instale as dependências
 
 ```bash
-cd gerador-de-senhas
+pip install -r requirements.txt
 ```
 
-Instale a dependência:
+Ou, se preferir:
 
 ```bash
 pip install pyperclip
 ```
 
-## ▶️ Como executar
-
-Execute o arquivo principal:
+### 4. Execute
 
 ```bash
 python main.py
 ```
 
-Depois, pressione:
+No Windows, caso `python` não funcione, tente:
 
-* `ENTER` para gerar uma senha
-* `S` para copiar a senha
-* `ENTER` para gerar outra senha
-* `ESC` para sair
-
-## 📸 Exemplo
-
-```text
-Pressione ENTER para gerar uma senha aleatória de 16 caracteres ou ESC para sair:
-
-Gerando senha...
-
-Sua senha: xK7@pL9#qW2!mZ8$
-
-Copiar Senha para a área de transferência? (S/N)
-
-Senha copiada para a área de transferência!
-
-Pressione ENTER para gerar outra senha ou ESC para sair:
+```bash
+py main.py
 ```
+
+## 🎮 Como usar
+
+- `ENTER` — gera uma senha
+- `S` — copia a senha para a área de transferência
+- `ENTER` — gera outra senha
+- `ESC` — encerra o programa
 
 ## 📁 Estrutura
 
 ```text
-gerador-de-senhas/
-│
+Gerador-de-Senhas/
 ├── main.py
+├── requirements.txt
 ├── README.md
-└── requirements.txt
+└── .gitignore
 ```
 
 ## 📚 Objetivo
 
-Este projeto foi desenvolvido para praticar conceitos básicos de Python, incluindo:
-
-* Estruturas de repetição
-* Condicionais
-* Variáveis
-* Strings
-* Geração de valores aleatórios
-* Entrada de teclado
-* Uso de bibliotecas externas
-
-## 🚧 Status
-
-**Beta**
-
-Projeto simples desenvolvido para aprendizado e prática de programação.
-
----
-
-Feito com 🐍 Python.
+Projeto criado para praticar lógica de programação, strings, geração de valores aleatórios, entrada de teclado e utilização de uma biblioteca externa.
