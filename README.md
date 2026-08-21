@@ -1,10 +1,10 @@
-# 🔐 Gerador de Senhas
+# 🔐 Gerenciador de Senhas
 
 Gerador de senhas aleatórias desenvolvido em **Python**.
 
 O projeto gera senhas de 16 caracteres usando letras, números e caracteres especiais e permite copiar a senha para a área de transferência.
 
-> 🟡 **Status:** Beta
+> 🟢 **Status:** Working
 
 ## ✨ Funcionalidades
 
@@ -15,13 +15,27 @@ O projeto gera senhas de 16 caracteres usando letras, números e caracteres espe
 - 📋 Cópia para a área de transferência
 - 🔄 Geração de novas senhas sem reiniciar o programa
 - ⌨️ Controle por teclado
+- ➕ Adicionar Senhas
+- 👁 Visualizar senhas
+- 🔒 Criptografia das senhas com segurança usando Fernet
+- 📂 Todas as senhas salvas em um arquivo .json com criptografia Fernet
+
+## 📚 O que aprendi
+
+- Organização de um projeto Python em módulos
+- Importação de funções entre arquivos
+- Manipulação de arquivos JSON
+- Uso de caminhos absolutos com `os.path`
+- Criação de dados persistentes
+- Conceitos básicos de criptografia
+- Separação de responsabilidades entre módulos
 
 ## 🛠️ Tecnologias
 
 - Python 3
 - `pyperclip` — cópia para a área de transferência
-- `msvcrt` — leitura do teclado no Windows
-- `random` e `string` — bibliotecas padrão do Python
+- `fernet` — criptografia de senhas
+- `json`- salva as senhas no arquivo .json
 
 > ⚠️ O programa utiliza `msvcrt`, portanto foi desenvolvido principalmente para **Windows**.
 
@@ -34,7 +48,7 @@ Instale o **Python 3** na sua máquina.
 ### 2. Clone o repositório
 
 ```bash
-git clone https://github.com/ricardodecarvalholorenzib/Gerador-de-Senhas.git
+git clone https://github.com/ricardodecarvalholorenzib/Gerenciador-de-Senhas.git
 cd Gerador-de-Senhas
 ```
 
@@ -49,6 +63,12 @@ Ou, se preferir:
 ```bash
 pip install pyperclip
 ```
+```bash
+pip install fernet
+```
+```
+pip install pwinput
+```
 
 ### 4. Execute
 
@@ -62,17 +82,13 @@ No Windows, caso `python` não funcione, tente:
 py main.py
 ```
 
-## 🎮 Como usar
-
-- `ENTER` — gera uma senha
-- `S` — copia a senha para a área de transferência
-- `ENTER` — gera outra senha
-- `ESC` — encerra o programa
-
 ## 📁 Estrutura
 
 ```text
-Gerador-de-Senhas/
+Gerenciador-de-Senhas/
+├── $secure$/
+├── cmds/
+├── essencials/
 ├── main.py
 ├── requirements.txt
 ├── README.md
@@ -81,4 +97,4 @@ Gerador-de-Senhas/
 
 ## 📚 Objetivo
 
-Projeto criado para praticar lógica de programação, strings, geração de valores aleatórios, entrada de teclado e utilização de uma biblioteca externa.
+Projeto criado para praticar lógica de programação, strings, geração de valores aleatórios, entrada de teclado e utilização de uma biblioteca externa, salvamento de senhas criptografadas em .json, criptografia e segurança de dados.
