@@ -39,11 +39,12 @@ O projeto gera senhas de 16 caracteres usando letras, números e caracteres espe
 
 > ⚠️ O programa utiliza `msvcrt`, portanto foi desenvolvido principalmente para **Windows**.
 
-🚧 Próximas melhorias
-[ ] Adicionar o nome do serviço que cada senha se origina
-[ ] Melhorar a interface
-[ ] Trocar `json` por `SQLite`
-[ ] Implementar interface com CustomTkinter
+## 🚧 Próximas Melhorias (Roadmap)
+
+- [ ] **Origem dos dados:** Adicionar o nome do serviço associado a cada senha
+- [ ] **Interface do Usuário (UI):** Redesenhar e aplicar melhorias visuais
+- [ ] **Persistência:** Migrar o armazenamento de `json` para `SQLite`
+- [ ] **Framework:** Implementar nova interface usando `CustomTkinter`
 
 ## ▶️ Como executar
 
